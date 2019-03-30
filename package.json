@@ -1,0 +1,31 @@
+{
+  "name": "trakalyzer",
+  "version": "1.0.0",
+  "description": "Analyzes calebmadrigal/trackerjacker wifi map outputs and displays a useful summary.",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "start": "node index.js -f wifi_map_sample.yaml",
+    "build": "pkg -t node10 package.json",
+    "test": "xo",
+    "build-all": "pkg -t node10-linux,node10-macos,node10-win32 package.json --out-path dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+github.com/GitSquared/trakalyzer"
+  },
+  "homepage": "https://github.com/GitSquared/trakalyzer#readme",
+  "bugs": {
+    "url": "https://github.com/GitSquared/trakalyzer/issues"
+  },
+  "author": "Gabriel SAILLARD <gabriel@saillard.dev> (https://gaby.dev)",
+  "license": "WTFPL",
+  "devDependencies": {
+    "pkg": "^4.3.7",
+    "xo": "^0.24.0"
+  },
+  "dependencies": {
+    "arg": "^4.1.0",
+    "chalk": "^2.4.2"
+  }
+}
